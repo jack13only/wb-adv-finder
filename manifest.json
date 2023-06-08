@@ -7,13 +7,13 @@
   "action": {},
   "content_scripts": [
     {
-      "matches": ["https://www.wildberries/*"],
+      "matches": ["https://www.wildberries.ru/catalog/0/search.aspx?search=/*"],
       "js": ["app.js"]
     }
   ],
   "permissions": ["tabs", "scripting", "activeTab", "storage", "webRequest", "webNavigation"],
   "host_permissions": [
-    "*://*.wildberries.by/*", "*://*.wildberries.ru/*"
+    "*://*.wildberries.ru/*"
   ],
   "background": {
     "service_worker": "background.js"
