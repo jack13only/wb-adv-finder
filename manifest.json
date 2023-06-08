@@ -1,0 +1,21 @@
+{
+  "name": "WB adv finder",
+  "description": "Find and highlights all advs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {},
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://www.wildberries/*"],
+      "js": ["app.js"]
+    }
+  ],
+  "permissions": ["tabs", "scripting", "activeTab", "storage", "webRequest", "webNavigation"],
+  "host_permissions": [
+    "*://*.wildberries.by/*", "*://*.wildberries.ru/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
