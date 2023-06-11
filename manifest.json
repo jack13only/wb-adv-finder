@@ -1,6 +1,6 @@
 {
-  "name": "WB adv finder",
-  "description": "Find and highlights all advs",
+  "name": "WB-adv",
+  "description": "Find and highlight all advs",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {},
